@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual ATM</title>
+    <link rel="stylesheet" href="atm.css">
+</head>
+<body>
+    <div id="content">
+        <div id="cajero">
+            <h1>Bienvenido al cajero mágico</h1>
+            <p>Elige el monto que vas a retirar</p>
+            <div id="montosPorBoton">
+                <button value="100" id="uno">100</button>
+                <button value="75"  id="dos">75</button>
+                <button value="50"  id="tres">50</button>
+                <button value="25"  id="cuatro">25</button>
+            </div>
+            <p>O escribe tu propio monto</p>
+            <div id="botones">
+                <input type="number" id="dinero">
+                <input type="button" value="Extraer" id="extraer">
+            </div>
+        </div>
+        <div id="facturas">
+            <h2>Facturas</h2>
+            <hr>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <script src="atm.js"></script>
+</body>
+</html>
